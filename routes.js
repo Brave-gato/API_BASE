@@ -4,7 +4,7 @@ let router = express.Router();
 let controller = require('./controller');
 
 router.get('/hello', controller.hellow)
-router.get('/', (req, res) => res.json("nothing to see"));
+router.get('/', (req, res) => res.json("nothing to see baby"));
 
 
 module.exports = router;

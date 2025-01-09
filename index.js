@@ -8,10 +8,12 @@ const app = express();
 app.use(express.urlencoded({extended:true}));
 app.use('/', router);
 
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 5001
 
 db.connect().then(
     app.listen(port, () => {
-        console.info(`[SERVER] Listening on http://localhost:${port}`); 
+        console.info(`[SERVER] Listening on http://localhost:5001`); 
     })
 ) 
+
+/*ce code était à la place du port 5001${port}*/
