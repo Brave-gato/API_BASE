@@ -8,7 +8,7 @@ const app = express();
 app.use(express.urlencoded({extended:true}));
 app.use('/', router);
 
-const port = process.env.PORT || 5001
+const port = 80
 
 db.connect().then(
     app.listen(port, () => {
